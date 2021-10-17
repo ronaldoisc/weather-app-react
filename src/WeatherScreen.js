@@ -7,9 +7,9 @@ export const WeatherScreen = () => {
 
 
     return (
-        <div className=" w-full ">
+        <div className="w-full ">
             <div className="bg-blue-600  h-screen flex flex-column items-center">
-                <div className="container-fluid mx-auto px-4">
+                <div className="container-fluid mx-auto ">
                     <AddPlace setplace={setplace} />
                     <WeatherInfo place={place} />
 

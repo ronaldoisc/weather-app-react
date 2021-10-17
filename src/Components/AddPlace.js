@@ -14,9 +14,9 @@ export const AddPlace = ({ setplace }) => {
     }
 
     return (
-        <div>
+        <div >
             <form onSubmit={handleSubmit}>
-                <div className="flex flex-row">
+                <div className="flex md:flex-row flex-col justify-around">
                     <div>
                         <input
                             type="text"
@@ -24,11 +24,10 @@ export const AddPlace = ({ setplace }) => {
                             value={place}
                             onChange={handleInputChange}
                             placeholder="Ingresa un lugar"
-                            className="w-96 py-2 mx-2  rounded-lg outline-none bg-gray-100 text-center" />
+                            className="w-96 outline-none bg-gray-100 text-center rounded-md py-2 mt-2" />
                     </div>
-                    <div>
-                        <button type="submit" className="py-2 px-2 text-white bg-green-500 rounded-md">Aceptar</button>
-
+                    <div className="text-white md:mx-2">
+                        <button type="submit" className="w-full bg-green-500  rounded-md py-2 px-3 mt-2 mr-2">Aceptar</button>
                     </div>
                 </div>
             </form>
