@@ -1,6 +1,6 @@
 import React from 'react'
 import { useFetch } from '../customHooks/useFetch';
-// import loadingImage from '../assets/loading.gif';
+import loadingImage from '../assets/loading.gif';
 
 export const WeatherInfo = ({ place }) => {
 
@@ -9,8 +9,8 @@ export const WeatherInfo = ({ place }) => {
     return (
         <div>
 
-            {/* {loading && <img className="img-fluid mx-auto" src={loadingImage} alt="" />} */}
-            {loading && <p>Cargando..</p>}
+            {loading && <img className="img-fluid mx-auto" src={loadingImage} alt="" />}
+            {/* {loading && <p>Cargando..</p>} */}
 
 
             <div className="py-5 text-center text-white">
