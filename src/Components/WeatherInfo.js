@@ -10,9 +10,6 @@ export const WeatherInfo = ({ place }) => {
         <div>
 
             {loading && <img className="img-fluid mx-auto" src={loadingImage} alt="" />}
-            {/* {loading && <p>Cargando..</p>} */}
-
-
             <div className="py-5 text-center text-white">
                 <h1 className="text-6xl">{data.location}</h1>
                 <div className="flex flex-row justify-center items-center">
