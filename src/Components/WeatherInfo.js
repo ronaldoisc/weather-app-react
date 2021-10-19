@@ -1,6 +1,7 @@
 import React from 'react'
 import { useFetch } from '../customHooks/useFetch';
-import loadingImage from '../assets/loading.gif';
+// import loadingImage from '../assets/loading.gif';
+const loadingImage = require('../assets/loading.gif').default;
 
 export const WeatherInfo = ({ place }) => {
 
